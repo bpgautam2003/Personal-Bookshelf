@@ -53,7 +53,7 @@ const BookSearch = ({ onAddToBookshelf }) => {
                 {error && <p>Error: {error}</p>}
         </div>
 
-            <button onClick={() => window.location.href = '/bookshelf'}>Go to My Bookshelf</button>
+            <button onClick={() => window.location.href = '/bookshelf'}>My Bookshelf</button>
 
             </div>
         <div className='book-container'>
