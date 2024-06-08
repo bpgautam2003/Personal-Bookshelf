@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Book Search Page */
+
+.header{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 25px;
+}
+.book-search {
+  width: 60%;
+  margin: 20px;
+}
+
+.book-search input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/* Book Card */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 20%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-card h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.book-card p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #777;
+}
+
+.book-card button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.book-card button:hover {
+  background-color: #0056b3;
+}
+
+.book-results{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 25px;
+  
+}
+
+/* Bookshelf Page */
+.bookshelf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookshelf h2 {
+  font-size: 32px;
+  color: #333;
+  margin: 30px 0 ;
+}
+
+.book-container{
+  padding: 25px;
+  display: flex;
+}
+
+
+
+/* Navigation Button */
+.header button {
+  display: block;
+  width: 15%;
+  height: 40px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.book-search button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+  .book-search,
+  .bookshelf {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .book-card {
+    padding: 15px;
+  }
+}
